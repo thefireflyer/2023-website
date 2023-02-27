@@ -178,13 +178,13 @@ md:overflow-x-hidden"
 							<p class="flow-link underline">YouTube</p>
 						</a>
 
-						<!-- <p class="hidden md:block text-lg">Contact/info</p>
-						<a href="/email">
+						<p class="hidden md:block text-lg">Contact/info</p>
+						<a href="#">
 							<p class="flow-link underline">Email</p>
 						</a>
-						<a href="/resume">
+						<a href="#">
 							<p class="flow-link underline">Resume</p>
-						</a> -->
+						</a>
 					</div>
 				</div>
 			</div>
@@ -289,7 +289,7 @@ md:overflow-x-hidden"
 
 	@media screen and (min-width: 768px) {
 		.page-container {
-			background-image: url('http://thefireflyer.me/website/static/8913dc387c4ecdbb689c4e673be2646b/d3b28/img6.avif');
+			background-image: url('/img6.avif');
 			background-size: cover;
 		}
 
