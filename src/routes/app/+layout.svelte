@@ -1,4 +1,5 @@
 <script>
+
 	import { page } from '$app/stores';
 	import { navigating } from '$app/stores';
 
@@ -7,6 +8,8 @@
 
 	import Navlink from '../../lib/navlink.svelte';
 	import Transition from '$lib/transition.svelte';
+
+
 	/**
 	 * @type {any}
 	 */
@@ -35,6 +38,16 @@
 	});
 
 	let menuOpen = false;
+
+
+	import { onMount } from 'svelte';
+	import {SetupStorage, loading} from '../../lib/storagesys.js'
+	
+
+	onMount(() => {
+		let storageContext = SetupStorage()
+	})
+
 </script>
 
 <svelte:window bind:online />
@@ -114,6 +127,27 @@
 			</div>
 		</div>
 
+		{#if $loading}
+		
+		<div class="
+		grow flex justify-center items-center
+		rounded-b-xl
+		slot-container
+		relative
+		bg-neutral-100 dark:bg-neutral-900
+		overflow-hidden">
+			<span class="
+			w-14 h-14
+			flex justify-center items-center
+			rounded-full
+			material-icons-outlined text-4xl 
+			text-gray-500 dark:text-gray-400">
+					autorenew
+			</span>
+		</div>
+		
+		{:else}
+		
 		<div
 			class="
         grow
@@ -123,26 +157,6 @@
         bg-neutral-100 dark:bg-neutral-900
         overflow-hidden"
 		>
-			<!-- {#key pageUrl}
-            <div class="
-            slot-item
-            flex
-            overflow-hidden flex-col md:flex-row"
-            in:fly={{ 
-                easing: quintInOut,
-                y: 100, 
-                x:0,
-                duration: 500, 
-                opacity: 0 }}
-            out:fly={{ 
-                easing: quintInOut,
-                y: -100,
-                x:0,
-                duration: 500, 
-                opacity: 0 }}>
-                <slot />
-            </div>
-            {/key} -->
 			<Transition
 				url={pageUrl}
 				classes="
@@ -154,7 +168,11 @@
 				<slot />
 			</Transition>
 		</div>
+
+		{/if}
+
 	</div>
+
 	<footer class="flex md:hidden">
 		<div
 			class="grow
