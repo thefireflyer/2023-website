@@ -1,1 +1,0 @@
-function t({params:e}){return{event:{name:`test ${e.id}`,desc:"",start:{minutes:25,hours:15,date:22,month:2,year:2023},end:{minutes:25,hours:16,date:22,month:2,year:2023}}}}const n=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{n as _,t as l};
