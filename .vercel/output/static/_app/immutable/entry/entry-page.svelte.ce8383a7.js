@@ -1,0 +1,1 @@
+import{S as l,i,s as c,k as h,r as m,l as d,m as p,u,h as r,b as _,H as f,n as s}from"../chunks/index.b926dca2.js";function x(o){let t,n;return{c(){t=h("h1"),n=m("Entry")},l(e){t=d(e,"H1",{});var a=p(t);n=u(a,"Entry"),a.forEach(r)},m(e,a){_(e,t,a),f(t,n)},p:s,i:s,o:s,d(e){e&&r(t)}}}class E extends l{constructor(t){super(),i(this,t,null,x,c,{})}}export{E as default};

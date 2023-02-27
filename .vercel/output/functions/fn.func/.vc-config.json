@@ -1,0 +1,6 @@
+{
+	"runtime": "nodejs16.x",
+	"handler": "..\\..\\..\\..\\..\\dev\\testing\\svelte\\test.1\\.svelte-kit\\vercel-tmp\\index.js",
+	"launcherType": "Nodejs",
+	"experimentalResponseStreaming": true
+}
