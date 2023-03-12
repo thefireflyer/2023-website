@@ -289,7 +289,7 @@ md:overflow-x-hidden"
 
 	@media screen and (min-width: 768px) {
 		.page-container {
-			background-image: url('/img6.avif');
+			background-image: url('/img7.avif');
 			background-size: cover;
 		}
 

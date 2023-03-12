@@ -1,1 +1,9 @@
-<h1>Test route</h1>
+
+<div class="
+grow flex flex-col
+justify-center items-center
+p-3
+bg-base
+relative overflow-hidden">
+
+</div>

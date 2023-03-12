@@ -1,8 +1,10 @@
 .DS_Store
 node_modules
 /build
+/private
 /.svelte-kit
 /package
 .env
 .env.*
 !.env.example
+src/routes/ocean/*

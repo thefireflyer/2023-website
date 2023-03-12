@@ -2,7 +2,7 @@
 	import "../app.css";
 </script>
 
-<main class="
+<main class="mocha
 	bg-neutral-100 dark:bg-neutral-900
 	h-full w-full
 	flex flex-col md:flex-row">
