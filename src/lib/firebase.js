@@ -4,18 +4,17 @@ import { browserLocalPersistence, getAuth, setPersistence } from "firebase/auth"
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+import { PUBLIC_API_KEY, PUBLIC_APP_ID, PUBLIC_AUTHDOMAIN, PUBLIC_DATABASE_URL, PUBLIC_MESSAGING_SENDER_ID, PUBLIC_PROJECT_ID, PUBLIC_STORAGE_BUCKET } from "$env/static/public";
 
-import { VITE_API_KEY, VITE_APP_ID, VITE_AUTHDOMAIN, VITE_DATABSE_URL, VITE_MESSAGING_SENDER_ID, VITE_PROJECT_ID, VITE_STORAGE_BUCKET } from '$env/static/private';
-  
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: VITE_API_KEY,
-  authDomain: VITE_AUTHDOMAIN,
-  databaseURL: VITE_DATABSE_URL,
-  projectId: VITE_PROJECT_ID,
-  storageBucket: VITE_STORAGE_BUCKET,
-  messagingSenderId: VITE_MESSAGING_SENDER_ID,
-  appId: VITE_APP_ID
+  apiKey: PUBLIC_API_KEY,
+  authDomain: PUBLIC_AUTHDOMAIN,
+  databaseURL: PUBLIC_DATABASE_URL,
+  projectId: PUBLIC_PROJECT_ID,
+  storageBucket: PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: PUBLIC_MESSAGING_SENDER_ID,
+  appId: PUBLIC_APP_ID
 };
 
 // Initialize Firebase
