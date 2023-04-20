@@ -1,7 +1,8 @@
 <script lang="ts">
+	import Gallerycard from "$lib/gallerycard.svelte";
 
-    const images = Array.from(Array(13).keys())
 
+    const images = Array.from(Array(14).keys())
 
 </script>
 
@@ -21,7 +22,7 @@
 D&D spell cards project
 </p>
 <p class="text-lg text-neutral-500 dark:text-neutral-400">
-xx/xx/2022
+27 March 2022
 </p><br/>
 
 <div class="py-2">
@@ -36,9 +37,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <div class="flex flex-wrap
 justify-center items-center
-gap-5">
+gap-5 gallery">
     {#each images as image}
-    <img src="/{image}.png" class="
-    w-80 rounded-lg">
+    <Gallerycard image={image}></Gallerycard>
     {/each}
 </div>
