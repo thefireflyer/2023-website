@@ -37,6 +37,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/supabase-js": "^2.22.0",
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"firebase": "^9.17.1",
 		"firebase-admin": "^11.5.0",
 		"npm-check-updates": "^16.6.3"
