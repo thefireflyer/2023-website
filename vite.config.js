@@ -4,9 +4,9 @@ import fs from 'fs'
 import mkcert from 'vite-plugin-mkcert'
 
 
-const certificate = fs.readFileSync('cert.pem')
-const key = fs.readFileSync('key.pem')
-const https = () => ({ cert: certificate, key: key })
+// const certificate = fs.readFileSync('cert.pem')
+// const key = fs.readFileSync('key.pem')
+// const https = () => ({ cert: certificate, key: key })
 
 /** @type {import('vite').UserConfig} */
 const config = {
