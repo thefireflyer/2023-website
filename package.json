@@ -41,6 +41,7 @@
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"firebase": "^9.17.1",
 		"firebase-admin": "^11.5.0",
-		"npm-check-updates": "^16.6.3"
+		"npm-check-updates": "^16.6.3",
+		"vite-plugin-mkcert": "^1.15.0"
 	}
 }

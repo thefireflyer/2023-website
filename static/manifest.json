@@ -1,0 +1,15 @@
+{
+  "name": "Apps",
+  "short_name": "Apps",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "black",
+  "description": "Projects/updates/info",
+  "icons": [
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]  
+}
