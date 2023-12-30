@@ -5,6 +5,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    // require('@catppuccin/tailwindcss'),
+    require('@catppuccin/tailwindcss')({
+      prefix: "ctp",
+    }),
   ],
 }

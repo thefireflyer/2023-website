@@ -11,27 +11,55 @@
 			name: 'HomePortal',
 			icon: 'homeportal.png',
 			slug: '/homeportal'
-		},
+		}
 	];
 
 	let posts = [
+		// {
+		// 	name: 'Lorem ipsum dolor sit amet',
+		// 	image: '',
+		// 	slug: '/posts/test',
+		// 	desc: `
+		// 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus viverra adipiscing at in tellus. Tellus elementum sagittis vitae et leo. Sagittis id consectetur purus ut faucibus pulvinar. Pulvinar neque laoreet suspendisse interdum consectetur libero. In massa tempor nec feugiat nisl pretium. Tortor id aliquet lectus proin nibh. Vel eros donec ac odio tempor orci dapibus. Eget est lorem ipsum dolor sit amet. Aliquam vestibulum morbi blandit cursus risus at. Cursus eget nunc scelerisque viverra mauris in aliquam. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Lacus laoreet non curabitur gravida arcu. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Tellus in hac habitasse platea. Arcu dui vivamus arcu felis bibendum ut tristique et.
+		// 	`
+		// },
+		// {
+		// 	name: 'Senior project',
+		// 	image: '',
+		// 	slug: '/posts/test',
+		// 	desc: `
+		// 	`
+		// },
+		// {
+		// 	name: 'Personal web-ring list',
+		// 	image: '',
+		// 	slug: '/posts/test',
+		// 	desc: `
+		// 	`
+		// },
 		{
-			name: 'Lorem ipsum dolor sit amet',
+			name: 'Spell cards for D&D',
 			image: '',
-			slug: '/posts/test',
+			slug: '/posts/cards',
 			desc: `
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Risus viverra adipiscing at in tellus. Tellus elementum sagittis vitae et leo. Sagittis id consectetur purus ut faucibus pulvinar. Pulvinar neque laoreet suspendisse interdum consectetur libero. In massa tempor nec feugiat nisl pretium. Tortor id aliquet lectus proin nibh. Vel eros donec ac odio tempor orci dapibus. Eget est lorem ipsum dolor sit amet. Aliquam vestibulum morbi blandit cursus risus at. Cursus eget nunc scelerisque viverra mauris in aliquam. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Lacus laoreet non curabitur gravida arcu. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Tellus in hac habitasse platea. Arcu dui vivamus arcu felis bibendum ut tristique et.
 			`
-		}
+		},
+		{
+			name: 'Archives',
+			image: '',
+			slug: '/archives',
+			desc: `
+			`
+		},
 	];
 </script>
 
 <svelte:head>
-	<title>testing07</title>
+	<title>thefireflyer</title>
 </svelte:head>
 
 <div
-	class="
+	class="dark:bg-ctp-crust
 grow flex flex-col md:flex-row
 overflow-y-scroll md:overflow-y-hidden overflow-x-hidden"
 >
@@ -57,8 +85,8 @@ md:overflow-x-hidden"
 			>
 				<div
 					class="
-		p-3
-		bg-neutral-200 dark:bg-neutral-800
+		p-3 bg-neutral-200
+		content-containers
 		rounded-lg
 		"
 				>
@@ -85,8 +113,10 @@ md:overflow-x-hidden"
 				<div class="p-3" />
 
 				<div
-					class="grow flex flex-col md:overflow-y-scroll gap-y-5 
-		bg-neutral-200 dark:bg-neutral-800 rounded-lg p-1 md:p-3
+					class="grow flex flex-col md:overflow-y-scroll gap-y-5
+		bg-neutral-200
+		content-containers
+		rounded-lg p-1 md:p-3
 		md:rounded-b-none"
 				>
 					{#each posts as post}
@@ -115,6 +145,9 @@ md:overflow-x-hidden"
 		<div
 			class="
 	p-5
+	md:pl-2
+	pt-2
+	md:pt-5
 	md:pb-0
 	flex"
 		>
@@ -145,23 +178,28 @@ md:overflow-x-hidden"
 					<p class="text-2xl">thefireflyer</p>
 					<div class="p-1" />
 
-					<div class="flex gap-2 md:flex-col items-center ">
-						
-						<span class="
+					<div class="flex gap-2 md:flex-col items-center">
+						<span
+							class="
 						pronouns
 						hidden md:inline-flex
 						rounded-full
-						p-1 px-2">
+						p-1 px-2"
+						>
 							<!-- <div class="flag">
 								<img src="/transfem.png" class="mini-icon" alt="trans fem" />
 							</div> -->
 
-							<div class="
+							<div
+								class="
 							px-2
 							text-center text-lg
-							grow 
-							text-neutral-700 dark:text-neutral-300">they / them</div>
-							
+							grow
+							text-neutral-700 dark:text-neutral-300"
+							>
+								they / she
+							</div>
+
 							<!-- <div class="flag">
 								<img src="/enby girl alt.png" class="mini-icon" alt="enby girl" />
 							</div> -->
@@ -215,7 +253,9 @@ md:overflow-x-hidden"
 		left: -50%;
 		width: 200%;
 		height: 200%;
-		background: linear-gradient(90deg, rgba(96, 96, 96, 0.5), rgba(96, 96, 96, 0.5)) no-repeat right
+		// background: linear-gradient(90deg, rgba(96, 96, 96, 0.5), rgba(96, 96, 96, 0.5)) no-repeat right
+		// 	bottom / 0 100%;
+		background: linear-gradient(90deg, rgba(203, 166, 247, 0.1), rgba(203, 166, 247, 0.1)) no-repeat right
 			bottom / 0 100%;
 		transition: background-size 200ms ease-in-out;
 		transform: rotateZ(45deg);
@@ -234,11 +274,15 @@ md:overflow-x-hidden"
 	}
 
 	.post-link:hover {
-		background-color: rgba(96, 96, 96, 0.5);
+		// background-color: rgba(96, 96, 96, 0.5);
+		background-color: rgba(203, 166, 247, 0.1);
 	}
 
 	.flow-link {
-		background: linear-gradient(90deg, rgb(96, 96, 96), rgb(96, 96, 96)) no-repeat right bottom / 0
+		// background: linear-gradient(90deg, rgb(96, 96, 96), rgb(96, 96, 96)) no-repeat right bottom / 0
+		// 	var(--bg-h);
+
+		background: linear-gradient(90deg, rgba(203, 166, 247, 0.4), rgba(203, 166, 247,0.4)) no-repeat right bottom / 0
 			var(--bg-h);
 		--bg-h: 100%;
 		transition: background-size 100ms ease-in-out;
@@ -302,6 +346,23 @@ md:overflow-x-hidden"
 			.about {
 				background-color: rgba(255, 255, 255, 0.6);
 			}
+			
+
 		}
+
+	}
+
+	@media screen and (max-width: 768px) {
+		@media (prefers-color-scheme: dark) {
+			.about {
+				background-color: hsl(269, 30%, 14%);	
+			}
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.content-containers {
+				background-color: hsl(269, 30%, 14%);
+			}
 	}
 </style>

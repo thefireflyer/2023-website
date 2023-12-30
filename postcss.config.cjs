@@ -1,6 +1,12 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
+    tailwindcss: {
+      content: ['./src/**/*.{html,js,svelte,ts}'],
+      plugins: [
+        require('@catppuccin/tailwindcss')({
+          prefix: "ctp",
+        }),
+      ],},
     autoprefixer: {},
   },
 }
