@@ -72,7 +72,7 @@ background-position: {position};
         rounded-full
         text-[1.7rem] text-right
 		material-icons-outlined"
-			style={settingsOpen ? `` : `color: ` + textColor}
+			style="color:{textColor}"
 			on:click={() => {
 				settingsOpen = !settingsOpen;
 			}}
@@ -116,9 +116,9 @@ background-position: {position};
 	z-50
 	flex justify-center pointer-events-none"
 		>
-		<div class="bottom-sheet flex bg-ctp-crust pointer-events-auto">
+		<div class="bottom-sheet flex bg-neutral-200 dark:bg-ctp-crust pointer-events-auto">
 			<div class="grow flex flex-col justify-evenly gap-2">
-				<div class="flex flex-row bg-ctp-mantle p-1 px-3 gap-2 border border-ctp-base rounded-full">
+				<div class="flex flex-row bg-neutral-200 dark:bg-ctp-mantle p-1 px-3 gap-2 border border-ctp-base rounded-full">
 					<span class="
 						text-2xl
 						material-icons pointer-events-none">link</span>
