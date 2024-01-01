@@ -1,13 +1,15 @@
-<script>
+<script lang="ts">
 	import Backdropcard from '$lib/backdropcard.svelte';
 	import { onMount } from 'svelte';
-	import { quadInOut } from 'svelte/easing';
+	import { quadInOut, quintInOut } from 'svelte/easing';
 	import { append } from 'svelte/internal';
-	import { fade, slide } from 'svelte/transition';
+	import { fade, fly, slide } from 'svelte/transition';
 
 	let time = new Date();
 
-	$: formatted = time.toLocaleTimeString();
+	$: formatted = 
+		ml_time ? (time.getHours().toString()+':'+time.getMinutes().toString())
+			: ((time.getHours()%12).toString()+':'+time.getMinutes().toString())
 
 	onMount(() => {
 		const interval = setInterval(() => {
@@ -19,6 +21,7 @@
 		};
 	});
 
+	let ml_time = false;
 	let backgroundUrl = 'https://pbs.twimg.com/media/FNgM9LJXMAYiE_4?format=jpg&name=large';
 	let sizing = 'cover';
 	let position = 'center';
@@ -26,36 +29,8 @@
 
 	let settingsOpen = false;
 
-	/**
-	 * @type {string[]}
-	 */
-	let backdrops = [
-		'https://pbs.twimg.com/media/FNgM9LJXMAYiE_4?format=jpg&name=large',
-		'https://pbs.twimg.com/media/FUll2URXsAA-pRA?format=jpg&name=large',
-		'https://pbs.twimg.com/media/FjuNEjnWYAADZJq?format=jpg&name=large',
-        'https://pbs.twimg.com/media/Fd68BhYaMAEGvy1?format=jpg&name=medium',
-        'https://pbs.twimg.com/media/FSfnqQfWQAA11PT?format=jpg&name=4096x4096'
-	];
 
-	let bookmarks = [
-		{
-			url: '/',
-			icon: 'icon.png',
-			name: 'test'
-		},
-		{
-			url: 'https://autodash.vercel.app/',
-			icon: 'autodashalt.png',
-			name: 'test'
-		},
-		{
-			url: 'http://thefireflyer.me/homeportal/',
-			icon: 'homeportal.png',
-			name: 'test'
-		}
-	];
-
-	let bookmarkDisplay = false;
+	let filelist: FileList | null | undefined
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -75,42 +50,18 @@ background-position: {position};
 >
 	<h1
 		class="
-    hidden md:block
-    py-6 text-6xl font-semibold text-right"
+    py-3
+    md:py-[2.5vh] text-[5rem] font-black text-right"
 		style="color: {textColor}"
 	>
 		{formatted}
 	</h1>
 
-	{#if bookmarkDisplay}
-		<div class="flex justify-end">
-			<div
-				class="
-        md:max-w-sm
-        grid grid-flow-col
-        justify-evenly
-        gap-3
-        p-3
-        grow md:grow-0
-        backdrop-brightness-50
-        rounded-lg
-        overflow-x-scroll snap-x
-        "
-			>
-				{#each bookmarks as bookmark}
-					<a href={bookmark.url} class="icon scroll-ml-3 snap-start">
-						<img src={bookmark.icon} class="icon" alt={bookmark.name} />
-					</a>
-				{/each}
-			</div>
-		</div>
-	{/if}
-
 	<div class="grow" />
 
 	<div class="flex">
 		<a href="/" class="flex items-center" style="color:{textColor}">
-			<span class="text-3xl material-icons-round"> arrow_back </span>
+			<span class="text-[1.7rem] material-icons-round"> arrow_back </span>
 		</a>
 
 		<div class="grow" />
@@ -119,8 +70,8 @@ background-position: {position};
 			class="
         z-10
         rounded-full
-        text-3xl text-right
-        material-icons-outlined"
+        text-[1.7rem] text-right
+		material-icons-outlined"
 			style={settingsOpen ? `` : `color: ` + textColor}
 			on:click={() => {
 				settingsOpen = !settingsOpen;
@@ -136,167 +87,115 @@ background-position: {position};
 
 	{#if settingsOpen}
 		<div
-			class="
-    absolute
-    w-full h-full
-    top-0 left-0
-    p-2 md:p-4
-    flex justify-end
-    backdrop-brightness-50
-    backdrop-blur
-    flex"
-			transition:fade
+			transition:fade={{
+				easing: quintInOut,
+				duration: 200
+			}}
+			on:click={() => {
+				settingsOpen = false;
+			}}
+			class="absolute w-full h-full top-0 left-0 z-40"
+			style="background-color: rgba(0,0,0,0.32);"
 		/>
+
 		<div
-			class="
-    absolute
-    w-full h-full
-    right-0 bottom-0
-    p-2 md:p-4
-    flex justify-end
-    flex
-    overflow-hidden"
-			transition:slide
+			in:fly={{
+				easing: quintInOut,
+				y: 100,
+				duration: 200,
+				opacity: 0
+			}}
+			out:fly={{
+				easing: quintInOut,
+				y: 100,
+				duration: 200,
+				opacity: 0
+			}}
+			class="bottom-sheet-container
+	absolute bottom-0 left-0
+	z-50
+	flex justify-center pointer-events-none"
 		>
-			<div
-				class="
-            settings grow
-            flex flex-col gap-3
-            bg-neutral-100 dark:bg-neutral-900
-            rounded-xl z-0
-            p-3
-            
-            justify-center
-            md:justify-start"
-			>
-				<h2 class="text-3xl">Settings</h2>
-				<div
-					class="
-                flex grow
-                flex-col gap-3
-                justify-start
-                md:justify-start
-                overflow-x-hidden
-                overflow-y-scroll"
-				>
-					<div class="py-1">
-						<div class="w-full h-px bg-black dark:bg-neutral-600" />
-					</div>
-
-					<div
-						class="
-                        justify-center
-                        justify-items-center
-                        md:justify-start
-                        md:w-fit
-                        grid md:flex
-                        gap-5
-                        grid-cols-2
-                        flex-row flex-wrap
-                "
-					>
-						{#each backdrops as backdrop (backdrop)}
-							<Backdropcard
-								{backdrop}
-								{backgroundUrl}
-								onSelect={() => {
-									backgroundUrl = backdrop;
-								}}
-								onRemove={() => {
-									backdrops = backdrops.filter((item) => item != backdrop);
-								}}
-							/>
-						{/each}
-						<div
-							class="
-                    backdrop-option 
-                    bg-neutral-200 dark:bg-neutral-800
-                    rounded-lg
-                    flex justify-center items-center"
-							on:click={() => {
-								navigator.clipboard.readText().then((url) => {
-									if (url != '' && url != null) {
-										if (backdrops.findIndex((item) => item === url) == -1) {
-											backdrops = [...backdrops, url];
-										}
-									}
-								});
-							}}
-						>
-							<span class="material-icons-outlined"> add </span>
-						</div>
-					</div>
-
-					<div class="py-1">
-						<div class="w-full h-px bg-black dark:bg-neutral-600" />
-					</div>
-
-					<label>
-						<input type="checkbox" bind:checked={bookmarkDisplay} />
-						Show bookmarks
-					</label>
-					{#if bookmarkDisplay}
-						<div
-							class="
-                        flex flex-col gap-3"
-							transition:slide
-						>
-							{#each bookmarks as bookmark}
-								<div
-									class="flex flex-col md:flex-row
-                            gap-3
-                            bg-neutral-200 dark:bg-neutral-800
-                            p-3 rounded-md
-                            md:items-center"
-								>
-									<label>
-										<input type="text" bind:textContent={bookmark.name} contenteditable />
-										name
-									</label>
-									<label>
-										<input type="text" bind:textContent={bookmark.url} contenteditable />
-										url
-									</label>
-									<label>
-										<input type="text" bind:textContent={bookmark.icon} contenteditable />
-										icon
-									</label>
-									<div class="grow" />
-									<div class="flex justify-center">
-										<span class="text-2xl material-icons-outlined"> delete </span>
-										<span class="md:hidden text-lg"> delete </span>
-									</div>
-								</div>
-							{/each}
-						</div>
-					{/if}
+		<div class="bottom-sheet flex bg-ctp-crust pointer-events-auto">
+			<div class="grow flex flex-col justify-evenly gap-2">
+				<div class="flex flex-row bg-ctp-mantle p-1 px-3 gap-2 border border-ctp-base rounded-full">
+					<span class="
+						text-2xl
+						material-icons pointer-events-none">link</span>
+					<input 
+					type="text" 
+					class="bg-ctp-mantle grow" 
+					bind:value={backgroundUrl}
+					placeholder="Background url" />
 				</div>
-
-				<div class="flex items-center">
-					<a href="/" class="flex items-center">
-						<span class="text-2xl px-2 material-icons-round"> arrow_back </span>
-						<span class="text-xl"> Apps </span>
-					</a>
-				</div>
+				<input type="file" id="file" name="file" bind:files={filelist} on:change={() => {
+					console.log(filelist)
+					let file = filelist?.item(0)
+					if (file != null && file != undefined) {
+						backgroundUrl = URL.createObjectURL(file)
+					}
+				}} class="hidden">
+				<button class="icon-button flex flex-row items-center" on:click={() => {
+					document.getElementById("file")?.click()
+				}}>
+						<span class="
+							icon-b
+							material-icons">upload</span>
+					<span>Upload background</span>
+				</button>
+				<button class="icon-button flex flex-row items-center"
+				on:click={() => {
+					ml_time = !ml_time
+				}}>
+					<span class="
+						icon-b
+						material-icons">
+						hourglass_empty
+					</span>
+					<span>Switch time format</span>
+				</button>
 			</div>
+		</div>
 		</div>
 	{/if}
 </div>
 
 <style>
-	.backdrop-option {
-		width: 150px;
-		height: 100px;
-	}
-
-	.bookmarks {
-		max-width: 320px;
-	}
-
 	.icon {
 		width: 64px;
 		width: 64px;
 		min-height: 64px;
 		min-height: 64px;
 	}
+
+	.bottom-sheet-container {
+		width: 100%;
+	}
+
+	.bottom-sheet {
+		width: 100%;
+		max-width: 640px;
+
+		/* height: 80px; */
+		border-radius: 28px 28px 0 0;
+		padding-top: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+		/* padding-left: 16px;
+		padding-right: 16px; */
+		padding-bottom: 16px;
+	}
+	.icon-button {
+		height: 40px;
+		/* width: 40px; */
+		gap: 4px;
+		font-size: 18px;
+	}
+
+	.icon-b {
+		font-size: 32px;
+		height: 32px!important;
+		max-height: 32px!important;
+	}
+
 </style>

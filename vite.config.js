@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import fs from 'fs'
-// import basicSsl from '@vitejs/plugin-basic-ssl'
+import basicSsl from '@vitejs/plugin-basic-ssl'
 import mkcert from 'vite-plugin-mkcert'
 
 
