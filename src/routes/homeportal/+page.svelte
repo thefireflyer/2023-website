@@ -9,7 +9,7 @@
 
 	$: formatted = 
 		ml_time ? (time.getHours().toString()+':'+time.getMinutes().toString())
-			: ((time.getHours()%12).toString()+':'+time.getMinutes().toString())
+			: ((time.getHours()>12?time.getHours()-12:time.getHours()).toString()+':'+time.getMinutes().toString())
 
 	onMount(() => {
 		const interval = setInterval(() => {
