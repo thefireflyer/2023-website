@@ -206,7 +206,7 @@ md:overflow-x-hidden"
 						</span>
 
 						<p class="hidden md:block text-lg">Other accounts</p>
-						<a href="https://github.com/theflyingfire">
+						<a href="https://github.com/thefireflyer">
 							<p class="flow-link underline">Github</p>
 						</a>
 						<a href="https://codepen.io/theflyingfire">
