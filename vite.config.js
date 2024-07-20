@@ -14,7 +14,7 @@ const config = {
 		https: false
 	},
 	preview: {
-		https: true
+		// https: true
 	},
 	plugins: [sveltekit()],
 };

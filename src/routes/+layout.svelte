@@ -1,16 +1,31 @@
 <script>
-	import "../app.css";
+	import { Engine } from '$lib/data-engine/engine';
+	import { onMount } from 'svelte';
+	import '../app.css';
+
+	let engine;
+
+	onMount(() => {
+		engine = new Engine();
+	});
 </script>
 
-<main class="dark:ctp-mocha
+<main
+	class="dark:ctp-mocha
 	bg-neutral-100 dark:bg-neutral-900
 	h-full w-full
-	flex flex-col md:flex-row">
+	flex flex-col md:flex-row"
+>
 	<slot />
 </main>
 
-<style>
-	@import '../lib/material-theme/css/theme.css';
+<style lang="scss">
+	/* ///////////////////////////////////////////////////////////////////// */
+
+	@import '$lib/styling/material-theme/css/theme.css';
+	@import '$lib/styling/fonts.css';
+
+	/* ///////////////////////////////////////////////////////////////////// */
 
 	:global(html, body) {
 		padding: 0;
@@ -21,11 +36,13 @@
 
 		background: var(--md-sys-color-background);
 		color: var(--md-sys-color-on-background);
-		font-family: 'Open Sans', sans-serif;
 	}
 
-	::-webkit-scrollbar {
-		display: none;
-	}
+	/* ///////////////////////////////////////////////////////////////////// */
 
+	// ::-webkit-scrollbar {
+	// 	display: none;
+	// }
+
+	/* ///////////////////////////////////////////////////////////////////// */
 </style>

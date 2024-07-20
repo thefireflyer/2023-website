@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"test": "jest",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -13,6 +14,7 @@
 	},
 	"devDependencies": {
 		"@catppuccin/tailwindcss": "^0.1.1",
+		"@jest/globals": "^29.7.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "^2.0.1",
 		"@sveltejs/adapter-vercel": "^2.1.1",
@@ -23,6 +25,7 @@
 		"eslint": "^8.32.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"jest": "^29.7.0",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.3",
 		"prettier-plugin-svelte": "^2.9.0",
@@ -31,6 +34,7 @@
 		"svelte-check": "^3.0.3",
 		"svelte-preprocess": "^5.0.1",
 		"tailwindcss": "^3.2.4",
+		"ts-jest": "^29.1.2",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4",
 		"vite": "^4.0.4"

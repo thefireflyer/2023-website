@@ -1,0 +1,47 @@
+/* ///////////////////////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('/fonts/cmunrm.otf');
+}
+@font-face {
+    font-family: 'Computer Modern';
+    font-weight: bold;
+    src: url('/fonts/cmunrb.otf');
+}
+@font-face {
+    font-family: 'Computer Modern';
+    font-weight: bold;
+    font-style: italic;
+    src: url('/fonts/cmunbi.otf');
+}
+@font-face {
+    font-family: 'Computer Modern';
+    font-style: italic;
+    src: url('/fonts/cmunti.otf');
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+@font-face {
+    font-family: 'Linux Libertine';
+    src: url('/fonts/linuxlibertine/LinLibertine_Rah.ttf');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-weight: bold;
+    src: url('/fonts/linuxlibertine/LinLibertine_RBah.ttf');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-weight: bold;
+    font-style: italic;
+    src: url('/fonts/linuxlibertine/LinLibertine_RBIah.ttf');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: italic;
+    src: url('/fonts/linuxlibertine/LinLibertine_RIah.ttf');
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
