@@ -1,6 +1,4 @@
 <script>
-	import Card from '$lib/components/card.svelte';
-
 	let links = [
 		{
 			name: 'App',
