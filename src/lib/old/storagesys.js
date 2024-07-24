@@ -1,6 +1,6 @@
 import { readable, writable, get } from 'svelte/store';
 
-export const NO_VALUE = Math.random()
+export const NO_VALUE = "NO_VALUE"
 
 export const KeyValuePair =
 /**

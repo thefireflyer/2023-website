@@ -27,7 +27,7 @@ export class Engine {
     local: IDBDatabase | IDBRequest | "Unavailable" | { "Error": string }
 
     constructor() {
-        this.memory = new AppData;
+        this.memory = new AppData();
         
         if (!window.indexedDB) {
             this.local = "Unavailable"
@@ -38,6 +38,8 @@ export class Engine {
             }
             this.local.onsuccess = event => {
                 this.local = event.target?.result as IDBDatabase
+
+                
                 this.sync()
             }
         }
@@ -45,7 +47,10 @@ export class Engine {
     }
 
     public async sync() {
-        
+        // console.log(this.local);
+        // let transaction = this.local.transaction(LOCAL_DB_NAME, "readwrite"); 
+        // const objectStore = transaction.objectStore(LOCAL_DB_NAME);
+        // const request = objectStore.get("data");
     }
 
 }

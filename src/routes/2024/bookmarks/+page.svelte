@@ -9,61 +9,61 @@
 	///////////////////////////////////////////////////////////////////////////
 
 	const bookmarks = [
-		// {
-		// 	section: 'Software Development',
-		// 	contents: [
-		// 		{
-		// 			name: 'Best practices for inclusive textual websites',
-		// 			url: 'https://seirdy.one/posts/2020/11/23/website-best-practices/'
-		// 		},
-		// 		{
-		// 			name: 'Advanced Functional Programming',
-		// 			url: 'https://www.youtube.com/watch?v=V1FamhjNVcs&list=PLF1Z-APd9zK5uFc8FKr_di9bfsYv8-lbc&index=1'
-		// 		},
-		// 		{
-		// 			name: 'Regex Tooling',
-		// 			url: 'https://regex101.com/'
-		// 		},
-		// 		{
-		// 			name: 'Idiomatic Rust',
-		// 			url: 'https://github.com/mre/idiomatic-rust'
-		// 		}
-		// 	]
-		// },
-		// {
-		// 	section: 'Math',
-		// 	contents: [
-		// 		{
-		// 			name: 'Book of Proof',
-		// 			url: 'https://richardhammack.github.io/BookOfProof/Main.pdf'
-		// 		},
-		// 		{
-		// 			name: 'Intro to Homotopy Type Theory',
-		// 			url: 'https://www.youtube.com/watch?v=Pu16iodESTU&list=PL245PKGUDdcN9-El9D7DRefwX4c9feiYq&index=1'
-		// 		},
-		// 		{
-		// 			name: 'Category Theory',
-		// 			url: 'https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&index=1'
-		// 		},
-		// 		{
-		// 			name: 'Openstax - Calculus Textbooks',
-		// 			url: 'https://openstax.org/details/books/calculus-volume-3'
-		// 		}
-		// 	]
-		// },
-		// {
-		// 	section: 'Writing',
-		// 	contents: [
-		// 		{
-		// 			name: "Butterick's Practical Typography",
-		// 			url: 'https://practicaltypography.com/'
-		// 		},
-		// 		{
-		// 			name: 'So, do you actually want to write?',
-		// 			url: 'https://artemis.sh/2024/06/19/do-you-really-want-to-write.html'
-		// 		}
-		// 	]
-		// },
+		{
+			section: 'Software Development',
+			contents: [
+				{
+					name: 'Best practices for inclusive textual websites',
+					url: 'https://seirdy.one/posts/2020/11/23/website-best-practices/'
+				},
+				{
+					name: 'Advanced Functional Programming',
+					url: 'https://www.youtube.com/watch?v=V1FamhjNVcs&list=PLF1Z-APd9zK5uFc8FKr_di9bfsYv8-lbc&index=1'
+				},
+				{
+					name: 'Regex Tooling',
+					url: 'https://regex101.com/'
+				},
+				{
+					name: 'Idiomatic Rust',
+					url: 'https://github.com/mre/idiomatic-rust'
+				}
+			]
+		},
+		{
+			section: 'Math',
+			contents: [
+				{
+					name: 'Book of Proof',
+					url: 'https://richardhammack.github.io/BookOfProof/Main.pdf'
+				},
+				{
+					name: 'Intro to Homotopy Type Theory',
+					url: 'https://www.youtube.com/watch?v=Pu16iodESTU&list=PL245PKGUDdcN9-El9D7DRefwX4c9feiYq&index=1'
+				},
+				{
+					name: 'Category Theory',
+					url: 'https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&index=1'
+				},
+				{
+					name: 'Openstax - Calculus Textbooks',
+					url: 'https://openstax.org/details/books/calculus-volume-3'
+				}
+			]
+		},
+		{
+			section: 'Writing',
+			contents: [
+				{
+					name: "Butterick's Practical Typography",
+					url: 'https://practicaltypography.com/'
+				},
+				{
+					name: 'So, do you actually want to write?',
+					url: 'https://artemis.sh/2024/06/19/do-you-really-want-to-write.html'
+				}
+			]
+		},
 		// {
 		// 	section: 'Art',
 		// 	contents: [
@@ -81,40 +81,35 @@
 		// 		}
 		// 	]
 		// },
-		// {
-		// 	section: 'Politics',
-		// 	contents: [
-		// 		{
-		// 			name: 'Hospital Price Transparency',
-		// 			url: 'https://www.cms.gov/priorities/key-initiatives/hospital-price-transparency'
-		// 		}
-		// 	]
-		// },
-		// {
-		// 	section: 'Blogs',
-		// 	contents: [
-		// 		{
-		// 			name: 'Foone',
-		// 			url: 'https://wiki.foone.org//w/Main_Page'
-		// 		},
-		// 		{
-		// 			name: 'Verity',
-		// 			url: 'https://cofree.coffee/~verity/'
-		// 		},
-		// 		{
-		// 			name: 'Seirdy',
-		// 			url: 'https://seirdy.one/'
-		// 		},
-		// 		{
-		// 			name: 'Artemis',
-		// 			url: 'https://artemis.sh/'
-		// 		},
-		// 		{
-		// 			name: 'Natty',
-		// 			url: 'https://natty.sh/'
-		// 		}
-		// 	]
-		// },
+		{
+			section: 'Blogs',
+			contents: [
+				{
+					name: 'Foone',
+					url: 'https://wiki.foone.org//w/Main_Page'
+				},
+				{
+					name: 'Verity',
+					url: 'https://cofree.coffee/~verity/'
+				},
+				{
+					name: 'Seirdy',
+					url: 'https://seirdy.one/'
+				},
+				{
+					name: 'Artemis',
+					url: 'https://artemis.sh/'
+				},
+				{
+					name: 'Natty',
+					url: 'https://natty.sh/'
+				},
+				{
+					name: 'LunarEclipse',
+					url: 'https://lunareclipse.zone/'
+				}
+			]
+		},
 		// {
 		// 	section: 'Academics',
 		// 	contents: [
@@ -128,41 +123,49 @@
 		// 		}
 		// 	]
 		// },
-		// {
-		// 	section: 'Fonts',
-		// 	contents: [
-		// 		{
-		// 			name: 'B612 Font Family',
-		// 			url: 'https://b612-font.com/'
-		// 		},
-		// 		{
-		// 			name: 'Linux Libertine & Biolinum',
-		// 			url: 'https://github.com/libertine-fonts/libertine'
-		// 		}
-		// 	]
-		// },
-		// {
-		// 	section: 'Themes',
-		// 	contents: [
-		// 		{
-		// 			name: 'Catppuccin',
-		// 			url: 'https://github.com/catppuccin/catppuccin'
-		// 		}
-		// 	]
-		// },
-		// {
-		// 	section: 'Misc',
-		// 	contents: [
-		// 		{
-		// 			name: 'ADHD Task Initiation',
-		// 			url: 'https://www.tiimoapp.com/blog/adhd-task-initiation'
-		// 		},
-		// 		{
-		// 			name: 'BBC Sound Effects',
-		// 			url: 'https://sound-effects.bbcrewind.co.uk/'
-		// 		}
-		// 	]
-		// }
+		{
+			section: 'Fonts',
+			contents: [
+				{
+					name: 'B612 Font Family',
+					url: 'https://b612-font.com/'
+				},
+				{
+					name: 'Linux Libertine & Biolinum',
+					url: 'https://github.com/libertine-fonts/libertine'
+				},
+				{
+					name: 'Libre Baskerville',
+					url: 'https://fonts.google.com/specimen/Libre+Baskerville'
+				}
+			]
+		},
+		{
+			section: 'Themes',
+			contents: [
+				{
+					name: 'Catppuccin',
+					url: 'https://github.com/catppuccin/catppuccin'
+				},
+				{
+					name: 'Rosé Pine',
+					url: 'https://rosepinetheme.com/'
+				}
+			]
+		},
+		{
+			section: 'Misc',
+			contents: [
+				{
+					name: 'ADHD Task Initiation',
+					url: 'https://www.tiimoapp.com/blog/adhd-task-initiation'
+				},
+				{
+					name: 'BBC Sound Effects',
+					url: 'https://sound-effects.bbcrewind.co.uk/'
+				}
+			]
+		}
 	];
 
 	///////////////////////////////////////////////////////////////////////////

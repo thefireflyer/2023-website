@@ -9,7 +9,7 @@
 			contents: [
 				{
 					title: 'Homeportal',
-					url: '/2024/homeportal'
+					url: '/homeportal'
 				},
 				{
 					title: 'CAS',
@@ -55,7 +55,7 @@
 				},
 				{
 					title: 'Bookmarks',
-					url: ''
+					url: '2024/bookmarks'
 				}
 			]
 		}
@@ -112,9 +112,6 @@
 		</ul>
 		<div>
 			<h2>About Me</h2>
-			<!-- <p>I'm an undergrad studying Computer Science and Sociology.</p>
-			<p>I mostly work in Rust and F#. Though, I'm familiar with a laundry list of others.</p>
-			<p>I also do <a href="/2024/photography">photography</a> from time to time.</p> -->
 			<p>
 				I'm an undergrad studying computer science and sociology. Though, I adore just about
 				everything computers, math, and social science.

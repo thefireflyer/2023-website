@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Backdropcard from '$lib/components/backdropcard.svelte';
+	import { Engine } from '$lib/data-engine/engine';
+	import { db, KeyValuePair, loading, SetupStorage } from '$lib/old/storagesys';
 	import { onMount } from 'svelte';
 	import { quadInOut, quintInOut } from 'svelte/easing';
 	import { append } from 'svelte/internal';
@@ -7,18 +9,44 @@
 
 	let time = new Date();
 
-	$: formatted = 
-		ml_time ? (time.getHours().toString()+':'+time.getMinutes().toString())
-			: ((time.getHours()>12?time.getHours()-12:time.getHours()).toString()+':'+time.getMinutes().toString())
+	$: formatted = ml_time
+		? time.getHours().toString() + ':' + time.getMinutes().toString()
+		: (time.getHours() > 12 ? time.getHours() - 12 : time.getHours()).toString() +
+		  ':' +
+		  time.getMinutes().toString();
 
 	onMount(() => {
 		const interval = setInterval(() => {
 			time = new Date();
 		}, 1000);
 
+		SetupStorage();
+
 		return () => {
 			clearInterval(interval);
 		};
+	});
+
+	loading.subscribe((v) => {
+		if (!v) {
+			KeyValuePair('userdata', 'homeportal').then(
+				(val) => {
+					if (val) {
+						console.log(val.data);
+						backgroundUrl = val.data.bg;
+						ml_time = val.data.ml_time;
+
+						file = val.data.file;
+						if (file != null && file != undefined && backgroundUrl.startsWith('blob:')) {
+							backgroundUrl = URL.createObjectURL(file);
+						}
+					}
+				},
+				(val) => {
+					console.error(val);
+				}
+			);
+		}
 	});
 
 	let ml_time = false;
@@ -29,8 +57,8 @@
 
 	let settingsOpen = false;
 
-
-	let filelist: FileList | null | undefined
+	let filelist: FileList | null | undefined;
+	let file: File | null | undefined;
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -93,6 +121,19 @@ background-position: {position};
 			}}
 			on:click={() => {
 				settingsOpen = false;
+
+				console.log(backgroundUrl);
+
+				KeyValuePair('userdata', 'homeportal', {
+					bg: backgroundUrl,
+					ml_time: ml_time,
+					file: file
+				}).then(
+					(val) => {},
+					(val) => {
+						console.error(val);
+					}
+				);
 			}}
 			class="absolute w-full h-full top-0 left-0 z-40"
 			style="background-color: rgba(0,0,0,0.32);"
@@ -116,46 +157,67 @@ background-position: {position};
 	z-50
 	flex justify-center pointer-events-none"
 		>
-		<div class="bottom-sheet flex bg-neutral-200 dark:bg-ctp-crust pointer-events-auto">
-			<div class="grow flex flex-col justify-evenly gap-2">
-				<div class="flex flex-row bg-neutral-200 dark:bg-ctp-mantle p-1 px-3 gap-2 border border-ctp-base rounded-full">
-					<span class="
+			<div class="bottom-sheet flex bg-neutral-200 dark:bg-ctp-crust pointer-events-auto">
+				<div class="grow flex flex-col justify-evenly gap-2">
+					<div
+						class="flex flex-row bg-neutral-200 dark:bg-ctp-mantle p-1 px-3 gap-2 border border-ctp-base rounded-full"
+					>
+						<span
+							class="
 						text-2xl
-						material-icons pointer-events-none">link</span>
-					<input 
-					type="text" 
-					class="bg-ctp-mantle grow" 
-					bind:value={backgroundUrl}
-					placeholder="Background url" />
-				</div>
-				<input type="file" id="file" name="file" bind:files={filelist} on:change={() => {
-					console.log(filelist)
-					let file = filelist?.item(0)
-					if (file != null && file != undefined) {
-						backgroundUrl = URL.createObjectURL(file)
-					}
-				}} class="hidden">
-				<button class="icon-button flex flex-row items-center" on:click={() => {
-					document.getElementById("file")?.click()
-				}}>
-						<span class="
+						material-icons pointer-events-none">link</span
+						>
+						<input
+							type="text"
+							class="bg-ctp-mantle grow"
+							bind:value={backgroundUrl}
+							placeholder="Background url"
+						/>
+					</div>
+					<input
+						type="file"
+						id="file"
+						name="file"
+						bind:files={filelist}
+						on:change={() => {
+							console.log(filelist);
+							file = filelist?.item(0);
+							if (file != null && file != undefined) {
+								backgroundUrl = URL.createObjectURL(file);
+							}
+						}}
+						class="hidden"
+					/>
+					<button
+						class="icon-button flex flex-row items-center"
+						on:click={() => {
+							document.getElementById('file')?.click();
+						}}
+					>
+						<span
+							class="
 							icon-b
-							material-icons">upload</span>
-					<span>Upload background</span>
-				</button>
-				<button class="icon-button flex flex-row items-center"
-				on:click={() => {
-					ml_time = !ml_time
-				}}>
-					<span class="
+							material-icons">upload</span
+						>
+						<span>Upload background</span>
+					</button>
+					<button
+						class="icon-button flex flex-row items-center"
+						on:click={() => {
+							ml_time = !ml_time;
+						}}
+					>
+						<span
+							class="
 						icon-b
-						material-icons">
-						hourglass_empty
-					</span>
-					<span>Switch time format</span>
-				</button>
+						material-icons"
+						>
+							hourglass_empty
+						</span>
+						<span>Switch time format</span>
+					</button>
+				</div>
 			</div>
-		</div>
 		</div>
 	{/if}
 </div>
@@ -194,8 +256,7 @@ background-position: {position};
 
 	.icon-b {
 		font-size: 32px;
-		height: 32px!important;
-		max-height: 32px!important;
+		height: 32px !important;
+		max-height: 32px !important;
 	}
-
 </style>
