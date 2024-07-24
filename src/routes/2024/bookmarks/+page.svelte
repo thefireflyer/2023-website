@@ -12,10 +12,10 @@
 		{
 			section: 'Software Development',
 			contents: [
-				{
-					name: 'Best practices for inclusive textual websites',
-					url: 'https://seirdy.one/posts/2020/11/23/website-best-practices/'
-				},
+				// {
+				// 	name: 'Best practices for inclusive textual websites',
+				// 	url: 'https://seirdy.one/posts/2020/11/23/website-best-practices/'
+				// },
 				{
 					name: 'Advanced Functional Programming',
 					url: 'https://www.youtube.com/watch?v=V1FamhjNVcs&list=PLF1Z-APd9zK5uFc8FKr_di9bfsYv8-lbc&index=1'
@@ -84,10 +84,10 @@
 		{
 			section: 'Blogs',
 			contents: [
-				{
-					name: 'Foone',
-					url: 'https://wiki.foone.org//w/Main_Page'
-				},
+				// {
+				// 	name: 'Foone',
+				// 	url: 'https://wiki.foone.org//w/Main_Page'
+				// },
 				{
 					name: 'Verity',
 					url: 'https://cofree.coffee/~verity/'
