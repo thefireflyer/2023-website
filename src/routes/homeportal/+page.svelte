@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Backdropcard from '$lib/components/backdropcard.svelte';
+	import { Engine } from '$lib/data-engine/engine';
 	import { db, KeyValuePair, loading, SetupStorage } from '$lib/old/storagesys';
 	import { onMount } from 'svelte';
 	import { quadInOut, quintInOut } from 'svelte/easing';
+	import { append } from 'svelte/internal';
 	import { fade, fly, slide } from 'svelte/transition';
 
 	let time = new Date();
