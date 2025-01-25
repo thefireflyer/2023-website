@@ -1,13 +1,5 @@
 <script>
-	import { Engine } from '$lib/data-engine/engine';
-	import { onMount } from 'svelte';
 	import '../app.css';
-
-	let engine;
-
-	onMount(() => {
-		engine = new Engine();
-	});
 </script>
 
 <main
@@ -37,12 +29,6 @@
 		background: var(--md-sys-color-background);
 		color: var(--md-sys-color-on-background);
 	}
-
-	/* ///////////////////////////////////////////////////////////////////// */
-
-	// ::-webkit-scrollbar {
-	// 	display: none;
-	// }
 
 	/* ///////////////////////////////////////////////////////////////////// */
 </style>

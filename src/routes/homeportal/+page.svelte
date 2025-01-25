@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { db, KeyValuePair, loading, SetupStorage } from '$lib/old/storagesys';
+	import { db, KeyValuePair, loading, SetupStorage } from '$lib/data/storagesys';
 	import { onMount } from 'svelte';
 	import { quadInOut, quintInOut } from 'svelte/easing';
 	import { fade, fly, slide } from 'svelte/transition';
