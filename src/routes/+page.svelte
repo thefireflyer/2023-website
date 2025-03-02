@@ -33,15 +33,69 @@
 		// 	section: 'Writing',
 		// 	contents: [
 		// 		{
-		// 			title: 'Playing with Graphs',
-		// 			url: ''
+		// 			title: 'Watercolor Math',
+		// 			url: '',
+		// 			desc: 
+		// 			['How do we reproduce the visual affect of watercolor, mathematically?']
 		// 		},
 		// 		// {
 		// 		// 	title: 'Review of Housing Market Interventions',
 		// 		// 	url: ''
 		// 		// },
 		// 		{
-		// 			title: 'Factorio Automation',
+		// 			title: 'A Simple SAT Solver',
+		// 			url: '',
+		// 			desc: 
+		// 			["What are SAT problems?"
+		// 			,"What is DPLL?"
+		// 			,"What is CDCL?"
+		// 			,"Where can I learn more?"
+		// 			]
+		// 		},
+		// 		{
+		// 			title: 'Rendering Graphs',
+		// 			url: '',
+		// 			desc:
+		// 			["How do we formalize graph rendering?"
+		// 			,"What is Stress Majorization?"
+		// 			,"What is Stochastic Gradient Descent?"
+		// 			,"What are some other options?"
+		// 			]
+		// 		},
+		// 		{
+		// 			title: 'Factorio & the Simplex Algorithm',
+		// 			url: '',
+		// 			desc:
+		// 			["What is the Simplex algorithm?"
+		// 			,"How do we formalize supply chain problems?"
+		// 			]
+		// 		},
+		// 		{
+		// 			title: 'The Knuth-Bendix Completion Algorithm in Context',
+		// 			url: '',
+		// 			desc:
+		// 			["What is the Knuth-Bendix Completion algorithm?"
+		// 			,"How can it be used in an actual CAS?"
+		// 			]
+		// 		},
+		// 		{
+		// 			title: 'Abstract Algebra in HoTT',
+		// 			url: ''
+		// 		},
+		// 		{
+		// 			title: 'CSCI 301 in HoTT',
+		// 			url: ''
+		// 		},
+		// 		{
+		// 			title: 'Transit Problems',
+		// 			url: ''
+		// 		},
+		// 		{
+		// 			title: 'A Gentle Dip into SMT Problems',
+		// 			url: ''
+		// 		},
+		// 		{
+		// 			title: 'Constructing Ideology',
 		// 			url: ''
 		// 		}
 		// 	]
@@ -106,6 +160,13 @@
 									{link.title}
 								</a>
 							{/if}
+							<!-- {#if link.desc != null}
+							 <ul>
+								{#each link.desc as q}
+								<li>{q}</li>
+								{/each}
+							 </ul>
+							{/if} -->
 						</li>
 					{/each}
 				</ul>
@@ -236,6 +297,16 @@
 					font-weight: normal;
 					padding-bottom: 0em;
 					opacity: 80%;
+
+					ul {
+						padding-left: 2em;
+						list-style-type: circle;
+						padding-bottom: 0em;
+
+						li {
+							padding-bottom: 0em;
+						}
+					}
 				}
 			}
 		}

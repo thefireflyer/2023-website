@@ -27,6 +27,14 @@
 				{
 					name: 'Idiomatic Rust',
 					url: 'https://github.com/mre/idiomatic-rust'
+				},
+				{
+					name: 'The Oivio Documentation System',
+					url: 'https://docs.divio.com/documentation-system/'
+				},
+				{
+					name: 'Kind Engineering',
+					url: 'https://kind.engineering/'
 				}
 			]
 		},
@@ -137,7 +145,15 @@
 				{
 					name: 'Libre Baskerville',
 					url: 'https://fonts.google.com/specimen/Libre+Baskerville'
-				}
+				},
+				// {
+				// 	name: 'Iconoir',
+				// 	url: 'https://iconoir.com/'
+				// },
+				// {
+				// 	name: 'Bootstrap Icons',
+				// 	url: 'https://icons.getbootstrap.com/'
+				// }
 			]
 		},
 		{
