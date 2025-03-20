@@ -26,7 +26,7 @@
     <div class="content">
         <div class="cover" id="(Top)">
             <h1>Food Security & Cooperatives</h1>
-            <h2>By <a href="https://thefireflyer.vercel.app/">Aidan Beil</a></h2>
+            <h2>By <a href="/">Aidan Beil</a></h2>
         </div>
 
         <!--BEGIN INSERT BODY--><div class="block">
