@@ -62,12 +62,12 @@
         </li>
         <li>
             <p>
-                And the historical and geopolitical context of the land.
+                And the historical and political context of the land.
             </p>
         </li>
     </ul>
     <p>
-        To answer in short: the Darién Gap is an environmentally important rainforest with very little solid soil, that irregular migrants have to cross through because the governments of Panama and Columbia do not allow irregular migrants to use ferry or air transit. Migrants typically die from drowning, infection and disease, though sexual violence and malnutrition are also prevalent.
+        To partially answer in short: the Darién Gap is an environmentally important rainforest with very little solid soil, that irregular migrants have to cross through because the governments of Panama and Colombia do not allow irregular migrants to use ferry or air transit.
     </p>
     <!-- Contrary to my assumptions going into this project, this problem is more about politics than it is about infrastructure. -->
 
@@ -81,8 +81,18 @@
 </div>
 <div class="block">
     <p>
-        The Darién Gap is situated between Panama and Columbia, consisting mostly of dense tropical rainforest (Burton, p 1-3). The Serrania de San Blas and Serrania del Darién mountain range forms a north-eastern border, and the Serrania de Maje range forms a broken western border (Burton, p 3). The inner area is largely densely forested lowland, with the Atrato swamp forming a southern border.
+        The Darién Gap effectively forms a border between Panama and Colombia.
     </p>
+    <p>
+        The Serrania de San Blas and Serrania del Darién mountain range forms a north-eastern edge, and the Serrania de Maje range forms a broken western edge (Burton, p 45).
+    </p>
+    <p>
+        The region is also extremely wet, and riddled with rivers (Miller, p 201).
+        The westward Tuira and northward Chucunaque rivers convene near El Real in the West before emptying out into the Gulf of San Miguel (Burton, p 45-46). And the Atrato river roughly forms the lengthy south-eastern border with the accompanying wetlands extending, both inwards into the Darién Gap, and outwards into the rest of Colombia.
+    </p>
+    <!-- 
+, consisting mostly of dense tropical rainforest (Burton, p 1-3). The Serrania de San Blas and Serrania del Darién mountain range forms a north-eastern border, and the Serrania de Maje range forms a broken western border (Burton, p 3). The inner area is largely densely forested lowland, with the Atrato swamp forming a southern border. -->
+
     <p>
         <img src="/the-darien-gap.png">
     </p>
@@ -90,7 +100,7 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Map_of_Dari%C3%A9n_Gap-en.svg/1920px-Map_of_Dari%C3%A9n_Gap-en.svg.png">
     </p>
     <p>
-        The region notably constitutes a 150 km break in the Pan-American highway; the only break remaining today.
+        The region also notably constitutes a 150 km break in the Pan-American highway; the only break remaining today.
     </p>
     <p>
         <img src="/gap.png">
@@ -98,19 +108,25 @@
     <!-- ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/PanAmericanHwy.png/1280px-PanAmericanHwy.png) -->
 
     <p>
-        The region is also extremely wet, feeding an incredible number of rivers (Miller, p 201). Additionally, there is extremely little solid soil; Miller said: &quot;in early tests, engineers dropped concrete-filled barrels into the basin&#39;s muddy sediment that sank fifteen stories under their own weight without finding bottom.&quot; (p 201-202)
+        There is also very little solid soil, especially so in the Atrato wetlands. Miller said: &quot;in early tests, engineers dropped concrete-filled barrels into the basin&#39;s muddy sediment that sank fifteen stories under their own weight without finding bottom.&quot; (p 201-202) Drillers could not find bedrock 320 feet below sea level in one region (p 202).
     </p>
     <p>
-        Drillers could not find bedrock 320 feet below sea level in one region (p 202).
+        Tropical rain forest covers most of the lowlands, but also reaches up into the mountains where rainfall is often higher (Burton, p 46). The mountains are also home to endemic species like Goldman&#39;s Humming-bird, Pirre-Humming-bird, Goldman&#39;s Quail Dove, Pirre Warbler, Green-naped Tanager and Pirre Chlorospingus (Burton, p 47).
     </p>
     <p>
-        Burton describes the fauna and ecology of the region in &quot;The Province of Darien&quot; (p 44).
+        The Speckle-breasted Antshrike, Nelson&#39;s Flycatcher, and the Olivaceous Bentbill are all endemic to the broader Darién and western Colombian region (Burton, p 47).
+    </p>
+    <p>
+        The Atrato wetlands are also home to a wide variety of birds, as well as Howler monkeys, alligators, and jaguars (Burton, p 47-48).
+    </p>
+    <p>
+        The Embera-Wounaan and Guna peoples live in the region, and the La Palma settlement is the capital of the relevant Darién province (&quot;Darién Gap&quot;). But otherwise, there is relatively little development (&quot;Darién Gap&quot;).
     </p>
 </div>
-<div id="Historical Origins: The Pan-American Highway" class="block-div">
+<div id="Historical Context: The Pan-American Highway" class="block-div">
     <div class="block">
         <h1>
-            Historical Origins: The Pan-American Highway
+            Historical Context: The Pan-American Highway
         </h1>
     </div>
 </div>
@@ -123,22 +139,25 @@
     <!-- In 1941, with the introduction of substantial US government funding (p 199-200).  -->
 
     <p>
-        The US began seriously funding the Pan-American highway after 1941, in an effort to secure the Panama Canal during the war (Miller, p 200). The project had strong support from the Nixon campaign but progress grew increasingly slow (p 200) for the reasons discussed in Introduction &amp; Orientation (p 200-203).
+        The US began seriously funding the Pan-American highway after 1941, in an effort to secure the Panama Canal during the war (Miller, p 200). The project had strong support from the Nixon campaign but progress grew increasingly slow (p 200), in large part due to soil and rain conditions (p 200-203).
     </p>
     <p>
-        Unfortunately, I don&#39;t have much more time to go over the history but Miller&#39;s work is fairly comprehensive. Though, his language is dated in places, and I was disappointed to see little mention of the class or cultural contexts of tourism, or more generally a substantial analysis of the equity of the project.
+        Unfortunately, I don&#39;t have much more time to go over the history but Miller&#39;s work is fairly comprehensive. Though, his language is dated in places, and I was disappointed to see little mention of the class or cultural contexts of tourism, or more generally a substantial analysis of the equity of the project. I would recommend searching for additional sources.
     </p>
 </div>
-<div id="Contemporary Issues: Migration and Geopolitics" class="block-div">
+<div id="Contemporary Issues: Migration and Politics" class="block-div">
     <div class="block">
         <h1>
-            Contemporary Issues: Migration and Geopolitics
+            Contemporary Issues: Migration and Politics
         </h1>
     </div>
 </div>
 <div class="block">
     <!-- Yates describes, in depth, the difficulties of accurately counting dead or missing persons in the Darién Gap.   -->
 
+    <p>
+        As previously mentioned, more than half a million people, around 520,000 people, crossed the Darién Gap in 2023 (Taylor 2024).
+    </p>
     <p>
         Yates argues that past counts of dead or missing people in the Darién Gap underestimate the true total, and that the process of counting is inherently political (p 1-8). In particular, Yates describes the IOM&#39;s methodology, and how it privileges state actors&#39; knowledge (p 8).
     </p>
@@ -169,6 +188,9 @@
     </div>
 </div>
 <div class="block">
+    <p>
+        This project ended up being quite time limited. I didn&#39;t really fully answer all of the original questions, and I haven&#39;t had time to properly edit this. However, I found this project interesting because I had previously assumed building infrastructure would be beneficial. But, it seems that an effective solution will be more about politics than engineering.
+    </p>
 </div>
 <div id="References" class="block-div">
     <div class="block">
@@ -244,13 +266,13 @@
         </a>
     </li>
     <li>
-        <a href="#Historical Origins: The Pan-American Highway">
-            Historical Origins: The Pan-American Highway
+        <a href="#Historical Context: The Pan-American Highway">
+            Historical Context: The Pan-American Highway
         </a>
     </li>
     <li>
-        <a href="#Contemporary Issues: Migration and Geopolitics">
-            Contemporary Issues: Migration and Geopolitics
+        <a href="#Contemporary Issues: Migration and Politics">
+            Contemporary Issues: Migration and Politics
         </a>
     </li>
     <li>
