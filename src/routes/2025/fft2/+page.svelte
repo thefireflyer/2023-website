@@ -67,7 +67,7 @@
         </li>
     </ul>
     <p>
-        To partially answer in short: the Darién Gap is an environmentally important rainforest with very little solid soil, that irregular migrants have to cross through because the governments of Panama and Colombia do not allow irregular migrants to use ferry or air transit.
+        To partially answer in short: the Darién Gap is an environmentally important rainforest with very little solid soil (Miller, p 201-202, p 206; Burton, p 49-50; &quot;Darién Gap&quot;), that irregular migrants have to cross through because the governments of Panama and Colombia do not allow irregular migrants to use ferry or air transit (Yates, p 5).
     </p>
     <!-- Contrary to my assumptions going into this project, this problem is more about politics than it is about infrastructure. -->
 
@@ -93,19 +93,25 @@
     <!-- 
 , consisting mostly of dense tropical rainforest (Burton, p 1-3). The Serrania de San Blas and Serrania del Darién mountain range forms a north-eastern border, and the Serrania de Maje range forms a broken western border (Burton, p 3). The inner area is largely densely forested lowland, with the Atrato swamp forming a southern border. -->
 
-    <p>
-        <img src="/the-darien-gap.png">
-    </p>
-    <p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Map_of_Dari%C3%A9n_Gap-en.svg/1920px-Map_of_Dari%C3%A9n_Gap-en.svg.png">
-    </p>
+    <!-- ![Screenshot of Google Earth over the Darien Gap.](/the-darien-gap.png) -->
+
+    <figure>
+    <img src="/the-darien-gap.png">
+    <figcaption>The Darién Province (Google Earth)</figcaption>
+</figure>
+
+    <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Map_of_Dari%C3%A9n_Gap-en.svg/1920px-Map_of_Dari%C3%A9n_Gap-en.svg.png">
+    <figcaption>Map of the Darién Gap by Milenioscuro (Wikipedia)</figcaption>
+</figure>
+
     <p>
         The region also notably constitutes a 150 km break in the Pan-American highway; the only break remaining today.
     </p>
-    <p>
-        <img src="/gap.png">
-    </p>
-    <!-- ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/PanAmericanHwy.png/1280px-PanAmericanHwy.png) -->
+    <figure>
+    <img src="/gap.png">
+    <figcaption>(Miller, p 202)</figcaption>
+</figure>
 
     <p>
         There is also very little solid soil, especially so in the Atrato wetlands. Miller said: &quot;in early tests, engineers dropped concrete-filled barrels into the basin&#39;s muddy sediment that sank fifteen stories under their own weight without finding bottom.&quot; (p 201-202) Drillers could not find bedrock 320 feet below sea level in one region (p 202).
@@ -156,19 +162,28 @@
     <!-- Yates describes, in depth, the difficulties of accurately counting dead or missing persons in the Darién Gap.   -->
 
     <p>
-        As previously mentioned, more than half a million people, around 520,000 people, crossed the Darién Gap in 2023 (Taylor 2024).
+        As previously mentioned, around 520,000 people, crossed the Darién Gap in 2023 (Taylor 2024).
     </p>
     <p>
-        Yates argues that past counts of dead or missing people in the Darién Gap underestimate the true total, and that the process of counting is inherently political (p 1-8). In particular, Yates describes the IOM&#39;s methodology, and how it privileges state actors&#39; knowledge (p 8).
+        After the contested Venezuelan election of July 28, 2024, many Venezuelans attempted to cross the Darién Gap, accounting for 65% of all crossings in 2023 (Zamorano). More generally, people from Latin America and the Caribbean accounted for most of the crossings, though people from China and Africa accounted for some crossings as well (Taylor 2024).
     </p>
     <p>
-        In response, Yates included testimonials from family members and friends of missing migrants, as well as from other migrants (p 7). With this broader definition, Yates found that 253 people had died or had gone missing trying to cross the Darién Gap from 2014 to 2021 (p 7). She found that drowning was the most common cause of death, and untreated illness the second (p 9). Others included homicide and suicide (p 9).
+        Yates argued that counting dead or missing people in the Darién Gap is not only difficult, but also inherently political (p 1-8). Yates also argued that the IOM&#39;s methodology privileges state actors&#39; knowledge (p 8).
+    </p>
+    <p>
+        In response, Yates included testimonials from family members and friends of missing migrants, as well as from other migrants (p 7). Yates found that 253 people had died or had gone missing trying to cross the Darién Gap from 2014 to 2021 (p 7). She found that drowning was the most common cause of death, and untreated illness the second (p 9). Others included homicide and suicide (p 9). Yates argued that the 253 figure was likely still an underestimate (p 14).
     </p>
     <p>
         Yates also highlighted the lack of medical support in the Darién Gap and its contribution to the death count (p 9). This matched well with Taylor&#39;s 2022 and 2024 reporting.
     </p>
     <p>
         Taylor also highlighted that MSF had recorded 214 cases of sexual violence just in December 2023 (2024, p 1). Taylor stressed the need for urgent care in effectively responding to these cases, and the severe lack of medical supplies and personnel (2024, p 1).
+    </p>
+    <p>
+        Turning to the present, after Trump eliminated CBP One, many migrants lost hope, turning back after having risked everything (Delacroix and Zamorano). Moreover, the return trips are rarely safe either (Delacroix and Zamorano).
+    </p>
+    <p>
+        Many of the groups heading back are Venezuelan and Colombian (Delacroix and Zamorano).
     </p>
     <!-- 1. Drowning
 1. Untreated illness
@@ -225,7 +240,7 @@
 </p>
 
     <p class="citation">
-    Delacroix, Matias, and Juan Zamorano. “They Crossed the Darien Gap to Reach the US. Migrants Are Now Returning.” AP News, 23 Feb. 2025, <a href="https://apnews.com/article/panama-united-states-migration-trump-beb125ce0ecbebb2895ea9dd18c4c53b">apnews.com/article/panama-united-states-migration-trump-beb125ce0ecbebb2895ea9dd18c4c53b</a>.
+    Delacroix, Matias, and Juan Zamorano. “They Crossed the Darien Gap to Reach the US. Migrants Are Now Returning.” <i>AP News</i>, 23 Feb. 2025, <a href="https://apnews.com/article/panama-united-states-migration-trump-beb125ce0ecbebb2895ea9dd18c4c53b">apnews.com/article/panama-united-states-migration-trump-beb125ce0ecbebb2895ea9dd18c4c53b</a>.
 </p>
 
     <p class="citation">
