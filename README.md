@@ -11,9 +11,9 @@
 - 2024
   - [Photography](https://thefireflyer.vercel.app/2024/photography)
   - [Bookmarks](https://thefireflyer.vercel.app/2024/bookmarks)
-- 2025
+<!-- - 2025
   - [Food for Thought 1](https://thefireflyer.vercel.app/2025/fft)
-  - [Food for Thought 2](https://thefireflyer.vercel.app/2025/fft2)
+  - [Food for Thought 2](https://thefireflyer.vercel.app/2025/fft2) -->
 - [Deprecated/Removed]
   - [Multi-app](https://test-6-41to72ftn-thefireflyer.vercel.app/app)
   - ...
