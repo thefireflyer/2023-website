@@ -35,6 +35,22 @@
 				{
 					name: 'Kind Engineering',
 					url: 'https://kind.engineering/'
+				},
+				{
+					name: 'An Introduction to Recursion Schemes [Parts I-IV]',
+					url: 'https://blog.sumtypeofway.com/posts/introduction-to-recursion-schemes.html'
+				},
+				{
+					name: 'The principal programming paradigms',
+					url: 'https://webperso.info.ucl.ac.be/~pvr/paradigmsDIAGRAMeng201.pdf'
+				},
+				{
+					name: 'The AST Typing Problem',
+					url: 'https://blog.ezyang.com/2013/05/the-ast-typing-problem/'
+				},
+				{
+					name: 'The case of the 500-mile email',
+					url: 'https://www.ibiblio.org/harris/500milemail.html'
 				}
 			]
 		},
@@ -56,6 +72,10 @@
 				{
 					name: 'Openstax - Calculus Textbooks',
 					url: 'https://openstax.org/details/books/calculus-volume-3'
+				},
+				{
+					name: 'Lean Game Server',
+					url: 'https://adam.math.hhu.de/'
 				}
 			]
 		},
@@ -69,6 +89,10 @@
 				{
 					name: 'So, do you actually want to write?',
 					url: 'https://artemis.sh/2024/06/19/do-you-really-want-to-write.html'
+				},
+				{ // double check this one
+					name: 'Citation as Pilgrimage',
+					url: 'https://www.drcathicks.com/post/citation-as-pilgrimage'
 				}
 			]
 		},
@@ -115,6 +139,43 @@
 				{
 					name: 'LunarEclipse',
 					url: 'https://lunareclipse.zone/'
+				},
+				{
+					name: 'Faultlore',
+					url: 'https://faultlore.com/blah/'
+				}
+			]
+		},
+		{
+			section: 'Neat Papers',
+			contents: [
+				{
+					name: 'Bananas, Lenses, Envelopes and Barbed Wire',
+					url: 'https://maartenfokkinga.github.io/utwente/mmf91m.pdf'
+				},
+				{
+					name: 'Build Systems à la Carte',
+					url: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/build-systems.pdf'
+				},
+				{
+					name: 'What Is Culturally Appropriate Food Consumption? [...]',
+					url: 'https://link.springer.com/article/10.1007/s10460-023-10515-6'
+				},
+				// {
+				// 	name: '<The graph rendering one>',
+				// 	url: ''
+				// },
+				{
+					name: 'Invertible Syntax Descriptions: Unifying Parsing and Pretty Printing',
+					url: 'https://www.informatik.uni-marburg.de/~rendel/unparse/rendel10invertible.pdf'
+				},
+				{
+					name: 'Linked Research on the Decentralised Web',
+					url: 'https://csarven.ca/linked-research-decentralised-web#mediums-and-paradigms'
+				},
+				{
+					name: 'To Dissect a Mockingbird',
+					url: 'https://dkeenan.com/Lambda/'
 				}
 			]
 		},
@@ -146,6 +207,10 @@
 					name: 'Libre Baskerville',
 					url: 'https://fonts.google.com/specimen/Libre+Baskerville'
 				},
+				{
+					name: 'Hyperlegible Fonts',
+					url: 'https://www.brailleinstitute.org/freefont/'
+				}
 				// {
 				// 	name: 'Iconoir',
 				// 	url: 'https://iconoir.com/'

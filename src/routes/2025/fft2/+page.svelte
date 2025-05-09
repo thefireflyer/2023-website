@@ -69,8 +69,6 @@
     <p>
         To partially answer in short: the Darién Gap is an environmentally important rainforest with very little solid soil (Miller, p 201-202, p 206; Burton, p 49-50; &quot;Darién Gap&quot;), that irregular migrants have to cross through because the governments of Panama and Colombia do not allow irregular migrants to use ferry or air transit (Yates, p 5).
     </p>
-    <!-- Contrary to my assumptions going into this project, this problem is more about politics than it is about infrastructure. -->
-
 </div>
 <div id="Introduction &amp; Orientation" class="block-div">
     <div class="block">
@@ -90,11 +88,6 @@
         The region is also extremely wet, and riddled with rivers (Miller, p 201).
         The westward Tuira and northward Chucunaque rivers convene near El Real in the West before emptying out into the Gulf of San Miguel (Burton, p 45-46). And the Atrato river roughly forms the lengthy south-eastern border with the accompanying wetlands extending, both inwards into the Darién Gap, and outwards into the rest of Colombia.
     </p>
-    <!-- 
-, consisting mostly of dense tropical rainforest (Burton, p 1-3). The Serrania de San Blas and Serrania del Darién mountain range forms a north-eastern border, and the Serrania de Maje range forms a broken western border (Burton, p 3). The inner area is largely densely forested lowland, with the Atrato swamp forming a southern border. -->
-
-    <!-- ![Screenshot of Google Earth over the Darien Gap.](/the-darien-gap.png) -->
-
     <figure>
     <img src="/the-darien-gap.png">
     <figcaption>The Darién Province (Google Earth)</figcaption>
@@ -137,13 +130,9 @@
     </div>
 </div>
 <div class="block">
-    <!-- In short, US automotive interests largely invented the Darién Gap, as a construct, in the 1920s and 1930s, trying to sell cars in Latin America (p ..., p 199). After which, Latin American automotive interests claimed the movement (p 199). Environmental and cultural concerns, as well as the sheer complexity of the land, could no longer be ignored in the 1970s, after which movement towards closing the gap slowed to a halt (...). -->
-
     <p>
         US car companies popularized the idea of a Pan-American highway in the 1920s and 1930s, largely in a play to sell cars to Latin America (Miller, p 198-199). And it worked. Governments paved thousands of miles of roads in Latin America (p 199).
     </p>
-    <!-- In 1941, with the introduction of substantial US government funding (p 199-200).  -->
-
     <p>
         The US began seriously funding the Pan-American highway after 1941, in an effort to secure the Panama Canal during the war (Miller, p 200). The project had strong support from the Nixon campaign but progress grew increasingly slow (p 200), in large part due to soil and rain conditions (p 200-203).
     </p>
@@ -159,8 +148,6 @@
     </div>
 </div>
 <div class="block">
-    <!-- Yates describes, in depth, the difficulties of accurately counting dead or missing persons in the Darién Gap.   -->
-
     <p>
         As previously mentioned, around 520,000 people, crossed the Darién Gap in 2023 (Taylor 2024).
     </p>
@@ -185,15 +172,6 @@
     <p>
         Many of the groups heading back are Venezuelan and Colombian (Delacroix and Zamorano).
     </p>
-    <!-- 1. Drowning
-1. Untreated illness
-    - Bacterial infection
-    - Fungal infection
-    - Respiratory illness
-    - Heart attack -->
-
-    <!-- 1.  -->
-
 </div>
 <div id="Conclusions" class="block-div">
     <div class="block">

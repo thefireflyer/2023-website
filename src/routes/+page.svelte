@@ -183,7 +183,7 @@
 			<br />
 			<!-- <br />
 			<br /> -->
-			<div class="footnote">thefireflyer[at]email.com</div>
+			<div class="footnote">thefireflyer.dev[at]protonmail.com</div>
 			<!-- <br />
 			<div class="footnote">⟣ glitchy catgirl ⟢</div> -->
 			<!-- <br />
