@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.status} --- thefireflyer</title>
+	<title>{$page.status} | thefireflyer</title>
 </svelte:head>
 
 <div class="root dark:bg-ctp-crust">

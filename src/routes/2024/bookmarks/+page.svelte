@@ -12,10 +12,6 @@
 		{
 			section: 'Software Development',
 			contents: [
-				// {
-				// 	name: 'Best practices for inclusive textual websites',
-				// 	url: 'https://seirdy.one/posts/2020/11/23/website-best-practices/'
-				// },
 				{
 					name: 'Advanced Functional Programming',
 					url: 'https://www.youtube.com/watch?v=V1FamhjNVcs&list=PLF1Z-APd9zK5uFc8FKr_di9bfsYv8-lbc&index=1'
@@ -51,6 +47,10 @@
 				{
 					name: 'The case of the 500-mile email',
 					url: 'https://www.ibiblio.org/harris/500milemail.html'
+				},
+				{
+					name: 'Types and Programming Languages',
+					url: 'https://www.cs.sjtu.edu.cn/~kzhu/cs383/Pierce_Types_Programming_Languages.pdf'
 				}
 			]
 		},
@@ -122,7 +122,7 @@
 				// },
 				{
 					name: 'Verity',
-					url: 'https://cofree.coffee/~verity/'
+					url: 'https://blog.veritates.love/'
 				},
 				{
 					name: 'Seirdy',
